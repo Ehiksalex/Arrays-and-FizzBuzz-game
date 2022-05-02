@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        let output = [];
+        function writeNum() {
+            results = output.push(output.length + 1);
+            if (results % 3 === 0 && results % 5 === 0) {
+                console.log("FizzBuzz");
+            }
+            else if (results % 3 === 0) {
+                console.log("Fizz");
+            }
+            else if (results % 5 === 0) {
+                console.log("Buzz");
+            }
+            else {
+                console.log (results);
+            }
+        }
+    </script> 
+    <div class="container">
+        <div id="mydiv">output here</div>
+        <input class="button" type="button" value="try"
+            onclick="writeNum(); document.getElementById('mydiv').innerText = output.toString();">
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

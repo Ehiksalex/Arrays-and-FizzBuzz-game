@@ -1,0 +1,30 @@
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(80deg, #4343e7, orange);
+    display: grid ;
+    justify-content: center;
+    place-items: center;
+    font-size: xx-large;
+    font-weight: 700;
+}
+.button{
+    width:fit-content;
+    padding: 10px 30px;
+    border: none;
+    font-size: 30px;
+    margin: 20px;
+    cursor: pointer;
+    color:#000000;
+    transition: transform 0.5s;
+    position:fixed;
+}
+.button:hover{
+    background: #0508aa;
+    transform: translateY(-10px);
+}
